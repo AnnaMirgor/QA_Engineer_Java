@@ -3,8 +3,7 @@ import java.util.Scanner;
 public class Task1 {
     public static void main(String[] args) {
 
-        double a;
-        double b;
+        double a, b;
 
         Scanner sc = new Scanner(System.in);
         System.out.print("Введите целое число a:");
@@ -13,24 +12,19 @@ public class Task1 {
         System.out.print("Введите целое число b:");
         b = sc.nextDouble();
 
-            if (a==b) {
-            System.out.println("a=b");}
+            if (a==b) System.out.println("a=b");
             else {
-                if (a > b) {
-                    System.out.println("a>b");}
-                    else System.out.println("a<b");}
+                if (a > b) System.out.println("a>b");
+                else System.out.println("a<b");}
 
-        double sum;
-        double reduce;
-        double mult;
-        double div;
+        double sum, reduce, multiple, div;
         sum = a+b;
         reduce = a-b;
-        mult = a*b;
+        multiple = a*b;
         div = a/b;
 
         System.out.printf("Результат сложения: %f\nРезультат вычитания: %f\n" +
-                "Результат умножения: %f\nРезультат деления: %f", sum, reduce, mult, div);
+                "Результат умножения: %f\nРезультат деления: %f", sum, reduce, multiple, div);
 
     }
 
